@@ -95,16 +95,16 @@ WSGI_APPLICATION = 'filmomania2.wsgi.app'
 #       }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django_cockroachdb',
-        'NAME': 'defaultdb',
-        'USER': 'andrej',
-        'PASSWORD': 'xg61TNM4phhtaAFxTD2EWg',
-        'HOST': 'filmomania2-15170.8nj.gcp-europe-west1.cockroachlabs.cloud',
-        'PORT': '26257',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django_cockroachdb',
+#         'NAME': 'defaultdb',
+#         'USER': 'andrej',
+#         'PASSWORD': 'xg61TNM4phhtaAFxTD2EWg',
+#         'HOST': 'filmomania2-15170.8nj.gcp-europe-west1.cockroachlabs.cloud',
+#         'PORT': '26257',
+#     }
+# }
 
 # PGHOST='ep-floral-tooth-a243jivr.eu-central-1.aws.neon.tech'
 # PGDATABASE='neondb'
@@ -116,18 +116,18 @@ DATABASES = {
 # PGUSER='postgres.jnkspshffpkdcnzltlpl'
 # PGPASSWORD='prnjavor2000'
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'postgres.jnkspshffpkdcnzltlpl',
-#         'PASSWORD': 'prnjavor2000',
-#         'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres.fmmrmfdhxzlboonqhicj',
+        'PASSWORD': 'prnjavor2000',
+        'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
+        'PORT': '5432',
+    }
+}
 
-# xg61TNM4phhtaAFxTD2EWg
+# xg61TNM4phhtaAFxTD2EWg cockroach
 
 # from .db import *  # noqa
 
