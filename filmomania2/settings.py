@@ -93,6 +93,27 @@ DATABASES = {
       }
 }
 
+# PGHOST='ep-floral-tooth-a243jivr.eu-central-1.aws.neon.tech'
+# PGDATABASE='neondb'
+# PGUSER='AndrejWiseman'
+# PGPASSWORD='tq0QxBuD3cbs'
+
+# PGHOST='aws-0-eu-central-1.pooler.supabase.com'
+# PGDATABASE='postgres'
+# PGUSER='postgres.jnkspshffpkdcnzltlpl'
+# PGPASSWORD='prnjavor2000'
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres.jnkspshffpkdcnzltlpl',
+#         'PASSWORD': 'prnjavor2000',
+#         'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
+#         'PORT': '5432',
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
