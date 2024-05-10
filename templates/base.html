@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FilmoManiA #2</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    {% block css %} {% endblock %}
+  </head>
+  <body>
+
+    {% include 'navbar.html' %}
+
+    <div class="container-sm">
+
+        <div class="unutr-kont">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+    </div>
+
+  </body>
+</html>
