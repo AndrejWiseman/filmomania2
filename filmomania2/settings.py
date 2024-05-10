@@ -79,18 +79,29 @@ WSGI_APPLICATION = 'filmomania2.wsgi.app'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': getenv('PGDATABASE'),
+#         'USER': getenv('PGUSER'),
+#         'PASSWORD': getenv('PGPASSWORD'),
+#         'HOST': getenv('PGHOST'),
+#         'PORT': getenv('PGPORT', 5432),
+#         'OPTIONS': {
+#           'sslmode': 'require',
+#         },
+#       }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': getenv('PGDATABASE'),
-        'USER': getenv('PGUSER'),
-        'PASSWORD': getenv('PGPASSWORD'),
-        'HOST': getenv('PGHOST'),
-        'PORT': getenv('PGPORT', 5432),
-        'OPTIONS': {
-          'sslmode': 'require',
-        },
-      }
+        'NAME': 'postgres',
+        'USER': 'postgres.jnkspshffpkdcnzltlpl',
+        'PASSWORD': 'prnjavor2000',
+        'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
+        'PORT': '5432',
+    }
 }
 
 # PGHOST='ep-floral-tooth-a243jivr.eu-central-1.aws.neon.tech'
