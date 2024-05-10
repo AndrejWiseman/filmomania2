@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'filmomania2.wsgi.application'
+WSGI_APPLICATION = 'filmomania2.wsgi.app'
 
 
 # Database
@@ -103,16 +103,16 @@ DATABASES = {
 # PGUSER='postgres.jnkspshffpkdcnzltlpl'
 # PGPASSWORD='prnjavor2000'
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'postgres.jnkspshffpkdcnzltlpl',
-#         'PASSWORD': 'prnjavor2000',
-#         'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres.jnkspshffpkdcnzltlpl',
+        'PASSWORD': 'prnjavor2000',
+        'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation
