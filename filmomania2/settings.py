@@ -3,6 +3,8 @@ from os import getenv
 from dotenv import load_dotenv
 from pathlib import Path
 
+import psycopg2
+
 load_dotenv()
 
 
@@ -93,16 +95,16 @@ WSGI_APPLICATION = 'filmomania2.wsgi.app'
 #       }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'postgres.jnkspshffpkdcnzltlpl',
-#         'PASSWORD': 'prnjavor2000',
-#         'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django_cockroachdb',
+        'NAME': 'defaultdb',
+        'USER': 'andrej',
+        'PASSWORD': 'xg61TNM4phhtaAFxTD2EWg',
+        'HOST': 'filmomania2-15170.8nj.gcp-europe-west1.cockroachlabs.cloud',
+        'PORT': '26257',
+    }
+}
 
 # PGHOST='ep-floral-tooth-a243jivr.eu-central-1.aws.neon.tech'
 # PGDATABASE='neondb'
@@ -114,17 +116,20 @@ WSGI_APPLICATION = 'filmomania2.wsgi.app'
 # PGUSER='postgres.jnkspshffpkdcnzltlpl'
 # PGPASSWORD='prnjavor2000'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres.jnkspshffpkdcnzltlpl',
-        'PASSWORD': 'prnjavor2000',
-        'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres.jnkspshffpkdcnzltlpl',
+#         'PASSWORD': 'prnjavor2000',
+#         'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
+#         'PORT': '5432',
+#     }
+# }
 
+# xg61TNM4phhtaAFxTD2EWg
+
+# from .db import *  # noqa
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
