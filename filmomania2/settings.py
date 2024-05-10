@@ -93,16 +93,16 @@ WSGI_APPLICATION = 'filmomania2.wsgi.app'
 #       }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres.jnkspshffpkdcnzltlpl',
-        'PASSWORD': 'prnjavor2000',
-        'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres.jnkspshffpkdcnzltlpl',
+#         'PASSWORD': 'prnjavor2000',
+#         'HOST': 'aws-0-eu-central-1.pooler.supabase.com',
+#         'PORT': '5432',
+#     }
+# }
 
 # PGHOST='ep-floral-tooth-a243jivr.eu-central-1.aws.neon.tech'
 # PGDATABASE='neondb'
